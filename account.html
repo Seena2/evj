@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Create account</title>
+</head>
+
+<body>
+    <div class="left_info">
+        <p>
+            To register and to use the Editorial Manager system,
+            please enter the requested information correctly.
+            Required fields have an astrix(*) next to the label.
+            Upon successful registration, you will be sent an email
+            with instruction to verify registration
+        </p>
+    </div>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Login Details</legend>
+            <p>
+                The username you choose must be unique within the system.
+                If the one you choose is already in use,you will be asked for another.
+            </p>
+            <div>
+                <label for="user_type">Register as:</label>
+                <select name="user_type" id="user_type">
+                    <option value="Editor">Editor</option>
+                    <option value="reviewer">Reviewer</option>
+                    <option value="author">Author</option>
+                </select>
+            </div>
+            <div>
+                <label for="user_name">Preferred user name <span>*</span></label>
+                <input type="text" id="user_name" name="user_name">
+            </div>
+            <div>
+                <label for="password">Password <span>*</span> :</label>
+                <input type="text" id="password" name="password">
+            </div>
+            <div>
+                <label for="re_password">Re-type password <span>*</span>:</label>
+                <input type="text" id="re_passwor" name="re_password">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Personal information</legend>
+            <div>
+                <label for="user_title">Title <span>*</span></label>
+                <input type="text" id="user_title" name="user_title" placeholder="Mr/Ms/Dr....">
+            </div>
+            <div>
+                <label for="first_name">First name <span>*</span>:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Given name">
+            </div>
+            <div>
+                <label for="middle_name">Middle name :</label>
+                <input type="text" id="first_name" name="middle_name">
+            </div>
+            <div>
+                <label for="last_name">Family name <span>*</span>:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Family name">
+            </div>
+            <div>
+                <label for="degree">Education Level:</label>
+                <select name="education" id="education">
+                    <option value="phd">Ph.D</option>
+                    <option value="md">M.D</option>
+                    <option value="dvm">DVM</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Contact Address</legend>
+            <div>
+                <label for="living_city">City<span>*</span>:</label>
+                <input type="text" id="living_city" name="living_city">
+            </div>
+            <div>
+                <label for="living_region">Region or State<span>*</span>:</label>
+                <input type="text" id="living_region" name="living_region">
+            </div>
+            <div>
+                <label for="country">Country <span>*</span>:</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div>
+                <label for="post">Zip or postal code </label>
+                <input type="text" id="post" name="post">
+            </div>
+
+            <div>
+                <label for="primary_phone_number">Primary phone Number<span>*</span>:</label>
+                <input type="tel" id="primary_phone_number" name="primary_phone_number"><span>(including country
+                    code)</span>
+            </div>
+            <div>
+                <label for="secondary_phone_number">Secondary phone Number:</label>
+                <input type="tel" id="secondary_phone_number" name="secondary_phone_number"><span>(including country
+                    code)</span>
+            </div>
+            <div>
+                <label for="fax">Fax Number:</label>
+                <input type="tel" id="fax" name="fax"><span>(including country code)</span>
+            </div>
+            <div>
+                <label for="user_email">Email_address<span>*</span>:</label>
+                <input type="email" id="user_email" name="user_email">
+                <p>If you enter morethan more than one email address use semicolon
+                    between each address,(e.g. abebe@journal.com; abebe_author@gmail.com).
+                </p>
+            </div>
+
+            <div>
+                <p>Preferred contact method<span>*</span>:</p>
+                <div>
+                    <input type="radio" id="email" name="prefered_contact_method" value="email">
+                    <label for="email">E-mail</label>
+                    <input type="radio" name="prefered_contact_method" id="phone" value="phone">
+                    <label for="phone">Phone</label>
+                    <input type="radio" name="prefered_contact_method" id="posta" value="posta">
+                    <label for="posta">Postal mail</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Institution Related Information</legend>
+
+            <div>
+                <label for="institution">Institution <span>*</span>:</label>
+                <input type="text" id="institution" name="institution">
+            </div>
+            <div>
+                <label for="position">Position</label>
+                <input type="text" id="position" name="posititon">
+            </div>
+            <div>
+                <label for="street">Street Address</label>
+                <input type="text" id="street" name="street_address">
+            </div>
+            <div>
+                <label for="city">City <span>*</span>:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div>
+                <label for="region">Region or State</label>
+                <input type="text" id="region" name="region">
+            </div>
+            <div>
+                <label for="country">Country <span>*</span>:</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div>
+                <label for="inst_post">Zip or postal code <span>*</span></label>
+                <input type="text" id="inst_post" name="institution_post">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Areas of Interest or Experties</legend>
+            <p>please indicate your areas of expertise either by selecting from the predefined
+                list using the "personal classification" button or by adding your own keywords individually
+                using the "New keyword" field and associated "Add" button.
+            </p>
+            <div>
+                <label for="classiffication">Personal Classification<span>*</span>:</label>
+                <em>(None selected)</em>
+                <button type="button">Select Personal Classification</button>
+                <p class="instruction">select 1+ classification</p>
+            </div>
+        </fieldset>
+        <div>
+            <h3>Select Personal Classification</h3>
+            <p>please identify your areas of interest and specialization by selecting one or more classification from
+                list below</p>
+            <em> To save changes you must click "Submit" before you leave this window.</em>
+            <div>
+                <label for="search_category">Search</label>
+                <input type="text" id="search_category" name="search_category"
+                    placeholder="optional you can just selct from option">
+                <button type="button">search</button>
+                <div>
+                    <a href="#">Expand all</a> <a href="#">Collapse all</a>
+                </div>
+                <div>
+                    <input type="checkbox" id="clinical_chemistry" name="clinical_chemistry">
+                    <label for="clinical_chemistry">5:Clinical Chemistry</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="coagulation" name="coagulation">
+                    <label for="coagulation">6:Coagulation</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="haematology" name="haematology">
+                    <label for="haematology">7:Haematology </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="histopathology" name="histopathology">
+                    <label for="histopathology">8:Histopathology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="immunology" name="immunology">
+                    <label for="immunology">9:Immunology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="microbiology" name="microbiology">
+                    <label for="microbiology">10:Microbiology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="biomarkers" name="biomarkers">
+                    <label for="biomarkers">11:Biomarkers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Moleculary_pathology" name="Moleculary_pathology">
+                    <label for="Moleculary_pathology">12:Moleculary Pathology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="toxicology" name="toxicology">
+                    <label for="toxicology">13:Toxicology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="preclinical" name="preclinical">
+                    <label for="preclinical">14:Pre-clinical</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="clinical" name="clinical">
+                    <label for="clinical">15:Clinical</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="veterinary" name="veterinary">
+                    <label for="veterinary">16:Veterinary</label>
+                </div>
+                <button type="button">Add>></button>
+                <button type="button"> Remove</button>
+                <div>
+                    <h4>Selected Classification</h4>
+                </div>
+                <p>selected items from above will be added to this queue</p>
+            </div>
+            <button type="button">Submit</button>
+            <button type="button">cancel</button>
+            <p>when submi is clicked the selected items will be presented as a list</p>
+        </div>
+                    <button type="button">Finish</button>
+    </form>
+
+</body>
+
+</html>
