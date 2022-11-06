@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Submission page</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h3>Manuscript Submission Form</h3>
+        <fieldset>
+            <legend>1-Progress bar: Article is for</legend>
+            <div>
+                <p>The Manuscript is submitted to appear in<span>*</span>:</p>
+                <div>
+                    <input type="radio" id="journal" name="article_for" value="journal">
+                    <label for="journal">Journal(Ethiop.Vet.J)</label>
+                </div>
+                <div>
+                    <input type="radio" id="proceedings" name="article_for" value="proceeding">
+                    <label for="proceedings">Proceedings</label>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>2-Progress bar: Article type selection</legend>
+            <div>
+                <p>If Manuscript is submitted to appear in journal,
+                    the column proposed is for<span>*</span>:</p>
+                <div>
+                    <input type="radio" id="original_articles" name="article_type" value="original_articles">
+                    <label for="original_articles">Original articles</label>
+                </div>
+                <div>
+                    <input type="radio" id="review" name="article_type" value="review">
+                    <label for="review">Review and feature articles</label>
+                </div>
+                <div>
+                    <input type="radio" id="communications" name="article_type" value="communications">
+                    <label for="communications">Short communications</label>
+                </div>
+                <div>
+                    <input type="radio" id="clinical" name="article_type" value="clinical">
+                    <label for="clinical">Clinical/Case reports</label>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button">back</button>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>3-Progress bar: Attach files</legend>
+            <div>
+                <p>Attach both the <em>abstract</em> and the <em>ariticle body</em>
+                    as word documents<span>*</span>:</p>
+                <div>
+                    <p>Abstract<span>*</span></p>
+                    <button type="button">Browse...</button><em>No file is selected</em>
+                    <p>Please upload word document</p>
+                </div>
+                <div>
+                    <p>Body of article<span>*</span></p>
+                    <button type="button">Browse...</button><em>No file is selected</em>
+                    <p>Please upload word document</p>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button">back</button>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>3-Progress bar: Attach files</legend>
+            <div>
+                <p>Attach both the <em>abstract</em> and the <em>ariticle body</em>
+                    as word documents<span>*</span>:</p>
+                <div>
+                    <p>Abstract<span>*</span></p>
+                    <button type="button">Browse...</button><em>No file is selected</em>
+                    <p>Please upload word document</p>
+                </div>
+                <div>
+                    <p>Body of article<span>*</span></p>
+                    <button type="button">Browse...</button><em>No file is selected</em>
+                    <p>Please upload word document</p>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button">back</button>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>4-Progress bar: Manuscript data</legend>
+            <div>
+                <label for="manuscript_title">Manuscript Title<span>*</span>:</label>
+                <textarea name="manuscript_title" id="manuscript_title" cols="75" rows="5"></textarea>
+            </div>
+            <p>Make each section as a table toggle and use next to open
+                the next section</p>
+            <button type="button">Next</button>
+            <div>
+                <label for="keywords">Add keywords(<em> separated by comma</em>)</label>
+                <textarea name="keywords" id="keywords" cols="75" rows="3"></textarea>
+            </div>
+            <button type="button">Next</button>
+        </fieldset>
+        <button type="button">back</button>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>5-Progress bar: Add author(s)</legend>
+            <div>
+                <p>Corresponding author</p>
+                <label for="first_name">First Name<span>*</span></label>
+                <input type="text" id="first_name" name="first_name">
+
+                <label for="middle_name">Middle Name<span>*</span></label>
+                <input type="text" id="middle_name" name="middle_name">
+
+                <label for="last_name">Last Name<span>*</span></label>
+                <input type="text" id="last_name" name="last_name">
+
+                <label for="email">E-mail<span>*</span></label>
+                <input type="email" id="email" name="email">
+
+                <label for="post">Zip or Postal code<span>*</span></label>
+                <input type="text" id="post" name="post">
+
+                <label for="telephone">Phone<span>*</span></label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="institution">Institution<span>*</span></label>
+                <input type="text" id="institution" name="institution">
+
+                <label for="city_country">city,Country<span>*</span></label>
+                <input type="text" id="city_country" name="city_country">
+                <p>Are you a member of EVA <span>*</span></p>
+                <input type="radio" id="yes" name="membership" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="membership" value="no">
+                <label for="no">No</label>
+            </div>
+            <div>
+                <p>Co-author(s)</p>
+                <div>
+                    <p>Make a toggle yes/No and if yes,
+                        repeat the above fields for each co-author</p>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button">back</button>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>6-Progress bar: Reviewer Preference</legend>
+            <div>
+                <p>Suggest Reviewers</p>
+                <div>
+                    <label for="reviewer_name">First Name</label>
+                    <input type="text" id="reviewer_name" name="reviewer_name">
+                </div>
+                <div>
+                    <label for="reviewer_last_name">Last Name</label>
+                    <input type="text" id="reviewer_last_name" name="reviewer_last_name">
+                </div>
+                <div>
+                    <label for="title"></label>
+                    <select name="title" id="title">
+                        <option value="Mr_s">Mr/s</option>
+                        <option value="Dr">Dr</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button">Add reviewer</button>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button">back</button>
+        <button type="button">proceed ></button>
+        <fieldset>
+            <legend>7-Progress bar:Authentication and copyright transfer agreement</legend>
+            <p>
+                Thank you for showing interest in submitting your manuscript,
+                before you start submitting your manuscript please make sure
+                you have done the following;
+                1. Thoroughly read the <a href="#">Guide for authors</a>
+                2.Download, print, fill and sign the <a href="#">copyright transfer form</a>
+                Scan it and attach it below.
+            </p>
+            <p>Copyright transfer agreement<span>*</span></p>
+            <button type="button">Browse...</button> <em>No files selected</em>
+            <p>Please attach the signed copyright agreement here</p>
+            <div>
+                <input type="checkbox" id="testment" name="testment" value="testify_true">
+                <label for="testment">This litrature work is my original work and it follows all copyrights
+                    regulations</label>
+            </div>
+            <div>
+                <input type="checkbox" id="agreement" name="agreement" value="agree">
+                <label for="agreement">I fully agree to the <a href="#">copyright transfer agreement</a></label>
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <div>
+            <h5>Congragulations!</h5>
+            <p>You have successfully submitted your manuscript,
+                we will review the manuscript ASAP and get back to you.
+                You can track the progress on "Track status" section.
+            </p>
+        </div>
+        <button type="button">Finish</button>
+    </form>
+
+</body>
+
+</html>

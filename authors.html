@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Authors page</title>
 </head>
+
 <body>
     <div>
         <p>Role: <span>Author</span></p>
         <p>Username: <span>the_author2</span></p>
         <p>email: <span>authors_email@example.com</span></p>
+        <button type="button">Edit</button>
+        <form action="" method="post">
+            <div>
+                <label for="username">User name:</label>
+                <input type="text" id="username" name="user_name">
+            </div>
+            <div>
+                <label for="middle_name">Middle name:</label>
+                <input type="text" id="middle_name" name="middle_name">
+            </div>
+            <div>
+                <label for="last_name">Last name:</label>
+                <input type="text" id="last_name" name="last_name">
+            </div>
+            <div>
+                <label for="user_email">E-mail:</label>
+                <input type="text" id="user_email" name="user_email">
+            </div>
+
+            <button type="button">Update information</button>
+        </form>
     </div>
     <div>
         <h3>New Submissions</h3>
         <ul>
             <li><a href="#">submit new manuscript</a> </li>
-            <li><a href="#">submit new manuscript</a> </li>
-            <li><a href="#">submit new manuscript</a> </li>
-            <li><a href="#">submit new manuscript</a> </li>
-            <li><a href="#">submit new manuscript</a> </li>
+            <li><a href="#">Returned submissions(0)</a> </li>
+            <li><a href="#">Incomplete Submissions(0)</a> </li>
+            <li><a href="#">Submissions waiting for author's approval(0)</a> </li>
+            <li><a href="#">Submissions being processed(2)</a> </li>
         </ul>
     </div>
-    
+    <div>
+        <h3>Revisions</h3>
+        <ul>
+            <li><a href="#">Submissions needing revision(0)</a> </li>
+            <li><a href="#">Returned revisions(0)</a> </li>
+            <li><a href="#">Incomplete submissions being revised(0)</a> </li>
+            <li><a href="#">Revisions waiting for author's approval(0)</a> </li>
+            <li><a href="#">Revisions being processed(2)</a> </li>
+            <li><a href="#">Declined revisions(1)</a> </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Completed</h3>
+        <ul>
+            <li><a href="#">submissions with decisions(1)</a> </li>
+            <li><a href="#">Submissions with production completed(0)</a> </li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
