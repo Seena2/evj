@@ -23,3 +23,15 @@ form{
 }
 
 
+
+/*TABLE STYLING*/
+table{
+    border: 1px solid #242222;
+    
+}
+th,td{
+    border: 1px solid #3a3838;
+    text-align: left;
+}
+
+
