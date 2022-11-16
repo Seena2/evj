@@ -1,30 +1,288 @@
-#top-menu{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #5D6063;
+    background-color: #EAEDF0;
+    font-family: "Helvetica", "Areal", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-menu {
     background-color: #dff04a;
 }
-#main-content{
+
+.header {
+    text-align: center;
+    background-color: #F6F7F8;
+    border: 3px solid #D6D9DC;
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#main-content {
     background-color: #dbd7d7;
 }
-#footer{
+
+#footer {
     background-color: #242222;
     color: #dbd7d7;
 }
 
 /*FORM STYLING*/
-
 /* center the form on the page*/
-form{
-    margin:0 auto;
-    width: 600px;
-    /*form outline*/
+.form-container {
+    background-color: #F6F7F8;
+    width: 100%;
+
+    /* center the form on the page */
+    margin: 0 auto;
+
+    /*form outline */
     padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    background: #dff04a;
+    border: 1px solid #D6D9DC;
+    border-radius: 1rem;
+}
+
+.form_row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Styling labels*/
+.form_row label {
+    margin-bottom: 3px;
+}
+
+/*Styling text fields ,email*/
+.form_row input[type='text'],
+.form_row input[type='email'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+/* Styling radio*/
+/*fieldset */
+.radio_form_row {
+    /* remove fieldset border*/
+    border: none;
+    /*give space with next element*/
+    margin-bottom: 40px;
+}
+.radio_form_row legend{
+    margin-bottom: 15px;
+}
+.radio_form_row .radio_label{
+    /* turn it to block e/t*/
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+}
+.radio_form_row input[type='radio']{
+    margin-top: 2px;
+}
+.radio_form_row .radio_label,
+.radio_form_row input[type='radio']{
+    float: left;
+}
+/*styling textarea*/
+.form_row textarea{
+     /* To make sure all all text fields have the same font settings by default,
+    textareas have monospace font */
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    /*width: 300px; /* unifrom text field size
+    box-sizing: border-box; */
+    /*match form field borders */
+    border:1px solid #D6D9DC; 
+    border-radius: 3px;
+
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 7px;
+    /* resize: none; if you want to disable default resizing capability*/
+}
+.form_row .instructions{
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+/*Button Styling*/
+.form_row button{
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #5995DA;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form_row button:hover{
+    background-color: #76AEED;
+}
+.form_row button:active{
+    background-color: #407FC7;
+}
+   
+   
+
+    
+   
+   
+
+    
+
+
+/* PSedo classes */
+input+span {
+    position: relative;
+}
+
+input+span::before {
+    position: absolute;
+    right: -20px;
+    top: 3px;
+}
+
+input[type='text']:invalid,
+input[type='email']:invalid {
+    border: 2px solid #D55C5F;
+    color: #D55C5F;
+    /*removes default red glow in firefox*/
+    box-shadow: none;  
+}
+
+input:invalid+span::before {
+    content: 'X';
+    color: red;
+}
+
+input:valid+span::before {
+    content: '✓';
+    color: green;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlights for focused elements*/
+    border-color: #000;
 }
 
 
 
-/*TABLE STYLING*/
+/* Media query*/
+/* for desktop */
+@media only screen and (min-width:700px) {
+
+    /* for Desktop*/
+    .header,
+    .form-container {
+        width: 600px;
+    }
+
+    .form_row {
+        flex-direction: row;
+        /* to avoid stretching*/
+        align-items: flex-start;
+        
+        margin-bottom: 20px;
+    }
+
+    .form_row label {
+        text-align: right;
+        /* un commnet it if you make labe take 120 px of total width*/
+        /*width: 120px;*/
+        
+        margin-top: 7px;
+        padding-right: 2px;
+    }
+
+    .form_row input[type='text'],
+    .form_row input[type='email'],
+    .form_row select,
+    .form_row textarea {
+ /* make it 400px to  place input next to label*/
+        width: 100%;
+        height: initial;
+    }
+    /*radio for desktop - to make everything appear next
+    to each other, note the 'width:120px must be unchecked for this to take effect*/
+    .radio_form_row{
+        margin-bottom: 10px;
+    }
+    .radio_form_row legend{
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .radio_form_row legend{
+        float: left;
+    }
+
+}
+
+
+/* note the example use <li> instead of <div> for contact form
+/*
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+form li+li{
+    margin-top: 1em;
+}
+label{
+    /* unifrom size and alignmetnt
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    
+}
+
+
+textarea{
+    /*Align multiline text fields with their labels
+    vertical-align: top;
+
+    /*provide space to type some text
+    height: 5em;
+
+}
+.btn{
+/*align buttons with text fields
+padding-left: 90px; /*same size as label elements
+}
+button{
+    /* This extra margin represents roughly the same space as the
+    space between labels and their text field 
+    margin-left: 0.5em;
+}
+/*TABLE STYLING
 table{
     border: 1px solid #242222;
     
@@ -33,5 +291,4 @@ th,td{
     border: 1px solid #3a3838;
     text-align: left;
 }
-
-
+*/
